@@ -13,6 +13,6 @@ import org.springframework.stereotype.Repository;
  * @author Luciano Velho Garcia
  */
 @Repository
-public interface CategoriaRepository extends JpaRepository<Categoria, Long>{
+public interface CategoriaRepository extends JpaRepository<Categoria, Integer>{
     
 }

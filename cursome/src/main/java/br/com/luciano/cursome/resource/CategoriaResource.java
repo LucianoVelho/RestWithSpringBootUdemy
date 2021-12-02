@@ -30,7 +30,7 @@ public class CategoriaResource {
     CategoriaRepository categoriaRepository; 
     
     @RequestMapping(value = "/{id}", method = RequestMethod.GET )
-    public ResponseEntity<?> find(@PathVariable long id){
+    public ResponseEntity<?> find(@PathVariable Integer id){
         Categoria cat = categoriaService.buscar(id);
         return ResponseEntity.ok().body(cat);
     }
